@@ -2,7 +2,7 @@
 * @Author: lifei
 * @Date:   2017-10-17 16:49:27
 * @Last Modified by:   lifei
-* @Last Modified time: 2017-10-27 17:23:33
+* @Last Modified time: 2017-11-01 15:08:07
 */
 
 'use strict';
@@ -26,7 +26,7 @@ class autoElement {
         this.survival = true
     }
     move() {
-        this.y += this.speed
+        this.y = this.speed ? this.y + this.speed : this.y
         if (this.y > Const.height) {
             this.y = -300
         }
